@@ -33,10 +33,10 @@ public class PersonService {
 	}
 	
 	
-	public Person getPerson(String id){
+	public String getPersonFirstName(String id){
 		
 		if(persons.containsKey(id))
-			return persons.get(id);
+			return persons.get(id).getFirstName() + "_v1";
 		else
 			return null;
 		}
